@@ -1,0 +1,50 @@
+.products_flex{
+    display: flex;
+    align-items: center;
+}
+
+.products_flex img{
+    height: 44.0938px;        
+}
+
+.products_text {
+    margin-left: 10px;
+}
+
+
+.products_text p{
+font-size: 16px;
+color: rgb(8, 82, 148);
+font-family: 'GOTHAM_MEDIUM';
+}
+
+.text .title_prod {
+        color: rgb(8, 82, 148);        
+        font-size: 16px;
+        font-family: GOTHAM_MEDIUM;
+}
+
+.text p{
+    margin-top: 5px;
+}
+
+ .prod{
+    color: rgb(8, 82, 148);  
+}
+
+.finprod{
+    color: rgb(8, 82, 148);
+    font-family: 'GOTHAM_MEDIUM';
+}
+
+.products_flex .succ {
+    height: 14.5031px;
+}
+
+.products_flex .succtext{
+            text-align: justify;
+            color: #5B5B5B;
+            font-size: 16px;
+            margin-left: 10px;
+            margin-top: 0px;
+}

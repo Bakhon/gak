@@ -1,0 +1,38 @@
+<?php
+/* UTF-8 
+XMPP webi
+http://webi.ru/webi_files/xmpp_webi.html
+
+*/
+
+include_once("xmpp.class.php");
+
+$webi_conf = array(
+    "host"=>"192.168.5.204",
+    "port"=>5222,
+    "user"=>'a.saleev',
+    "pass"=>"Cfkttd83",
+    "domain"=>"gak.kz"
+);
+$webi = new XMPP($webi_conf);
+
+$webi->connect(); // установка соединения...
+
+$webi->sendStatus('text status','chat',3); // установка статуса
+$webi->sendMessage("a.omarov@gak.kz", "86542934797 23"); // отправка сообщения
+
+
+$webi->getXML();
+
+// так можно зациклить
+/*
+
+while($webi->isConnected)
+{
+	$webi->getXML();
+}
+
+*/
+
+
+?>
